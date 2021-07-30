@@ -4,7 +4,7 @@ import './app.css';
 export interface Props {
     className: string;
     id: string;
-     onClick: () => void;
+    onClick: () => void;
 }
 
 export default function App(props: Props)
