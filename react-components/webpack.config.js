@@ -4,6 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
+const { link } = require('fs');
 
 const devServer = (isDev) => !isDev ? {} : {
     devServer: {
@@ -33,6 +34,15 @@ module.exports = ({ development }) => ({
                 use: 'ts-loader',
                 exclude: /node_modules/,
             },
+          /*  {
+                test: /\.svg$/,
+                loader: 'svg-inline-loader',
+              },
+            {
+                test: /\.(png|jp(e*)g|svg|gif)$/,
+                use: 'file-loader',
+                exclude: /node_modules/,
+              },*/
             {
                 test: /\.(?:ico|gif|png|jpg|jpeg|svg|mp3)$/i,
                 type: 'asset/resource',
@@ -52,9 +62,9 @@ module.exports = ({ development }) => ({
         ],
     },
     plugins: [
-
         new MiniCssExtractPlugin({ filename: 'style.css' }),
-        new HtmlWebpackPlugin({ title: 'English for kids' }),
+        new HtmlWebpackPlugin({ title: 'English for kids' },
+        {link: 'style.css'}),
         new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
     ],
     resolve: {
