@@ -11,6 +11,7 @@ import Building5 from '../../../assets/building5.jpg';
 
 const cards: CardProps[] = [
     {
+        id: 1,
         img: Building,
         companyLogo: RusSims,
         photoCount: 13,
@@ -22,6 +23,7 @@ const cards: CardProps[] = [
         buildingInfo: '5 bedroom apartoments for sale'
     },
     {
+        id: 2,
         img: Building1,
         companyLogo: Savills,
         photoCount: 23,
@@ -33,7 +35,8 @@ const cards: CardProps[] = [
         explonatoryText: 'Guide Price',
         buildingInfo: '5 bedroom apartoments for sale in the center of London'
     },
-    {
+    { 
+        id: 3,
         img: Building2,
         companyLogo: RusSims,
         photoCount: 33,
@@ -46,6 +49,7 @@ const cards: CardProps[] = [
         buildingInfo: '5 bedroom apartoments for sale in the center of London'
     },
     {
+        id: 4,
         img: Building3,
         companyLogo: Savills,
         photoCount: 18,
@@ -58,6 +62,7 @@ const cards: CardProps[] = [
         buildingInfo: '5 bedroom apartoments for sale in the center of London'
     },
     {
+        id: 5,
         img: Building4,
         companyLogo: RusSims,
         photoCount: 21,
@@ -70,6 +75,7 @@ const cards: CardProps[] = [
         buildingInfo: '5 bedroom apartoments for sale in the center of London'
     },
     {
+        id: 6,
         img: Building5,
         companyLogo: Savills,
         photoCount: 5,
@@ -86,7 +92,7 @@ const cards: CardProps[] = [
 
 export default function MainPage(): JSX.Element {
     const cardElements:JSX.Element[] = cards.map((item): JSX.Element => {
-        return <Card {...item}></Card>;
+        return <Card key={item.id} {...item}></Card>;
     })
     return <div className='cards-wrapper'>
         {cardElements}

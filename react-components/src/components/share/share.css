@@ -1,3 +1,11 @@
 button {
     border: none;
 }
+
+input {
+    border: none;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}

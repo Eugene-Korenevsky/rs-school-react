@@ -9,6 +9,7 @@ import CardInfo from './CardInfo';
 import CardFooter from './CardFooter';
 
 export interface CardProps {
+    id: number,
     img: string,
     companyLogo: string,
     photoCount: number,
