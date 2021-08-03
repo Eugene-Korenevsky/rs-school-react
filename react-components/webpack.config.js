@@ -34,15 +34,6 @@ module.exports = ({ development }) => ({
                 use: 'ts-loader',
                 exclude: /node_modules/,
             },
-          /*  {
-                test: /\.svg$/,
-                loader: 'svg-inline-loader',
-              },
-            {
-                test: /\.(png|jp(e*)g|svg|gif)$/,
-                use: 'file-loader',
-                exclude: /node_modules/,
-              },*/
             {
                 test: /\.(?:ico|gif|png|jpg|jpeg|svg|mp3)$/i,
                 type: 'asset/resource',
