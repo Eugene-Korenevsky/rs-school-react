@@ -3,7 +3,7 @@ import './share.css';
 
 export interface ButtonProps {
     className: string,
-    onCkickEvent: () => void,
+    onClickEvent: () => void,
     text?: string,
     image?: string
     imageClassName?: string
@@ -13,16 +13,16 @@ export interface ButtonProps {
 
 export default function Button(buttonProps: ButtonProps): JSX.Element {
     if (buttonProps.image && buttonProps.text) {
-        return <button onClick={buttonProps.onCkickEvent} className={buttonProps.className}>
+        return <button onClick={buttonProps.onClickEvent} className={buttonProps.className}>
             <div className={buttonProps.textWrapperClassName}>{buttonProps.text}</div>
             <img src={buttonProps.image} className={buttonProps.imageClassName} alt={buttonProps.alt}></img>
         </button>;
     } else if (buttonProps.image && !buttonProps.text) {
-        return <button onClick={buttonProps.onCkickEvent} className={buttonProps.className}>
+        return <button onClick={buttonProps.onClickEvent} className={buttonProps.className}>
             <img src={buttonProps.image} className={buttonProps.imageClassName} alt={buttonProps.alt}></img>
         </button>;
     } else {
-        return <button onClick={buttonProps.onCkickEvent} className={buttonProps.className}>
+        return <button onClick={buttonProps.onClickEvent} className={buttonProps.className}>
             <h2 className={buttonProps.textWrapperClassName}>{buttonProps.text}</h2>
         </button>;
     }

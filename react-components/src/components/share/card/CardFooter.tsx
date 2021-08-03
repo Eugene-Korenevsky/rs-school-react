@@ -16,13 +16,13 @@ export default function CardFooter(cardFooter: CardFooterProps): JSX.Element {
             <div className="card-footer-left-content-wrapper">
                 <h3 className="card-footer__added">{`Added on ${cardFooter.added}`}</h3>
                 <Button
-                    onCkickEvent={cardFooter.onLikeClick}
+                    onClickEvent={cardFooter.onLikeClick}
                     className="card-footer__like-button"
                     image={LikeButtonImage}
                     imageClassName="card-footer__like-button__image"
                     alt="like-button"></Button>
             </div>
-            <Button onCkickEvent={cardFooter.onMessageClick}
+            <Button onClickEvent={cardFooter.onMessageClick}
                 className="card-footer__message-button"
                 image={MessageButtonImage}
                 imageClassName="card-footer__message-button__image"

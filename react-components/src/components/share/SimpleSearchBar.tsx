@@ -8,11 +8,12 @@ export interface SimpleSearchBarProps {
 
 export default function SimpleSearchBar(simpleSearchBarProps: SimpleSearchBarProps): JSX.Element {
     return <div className="simple-search-bar">
-        <Button className="simple-search-bar__button" 
-        onCkickEvent={simpleSearchBarProps.onSearchEvent}
-        image={Search}
-        imageClassName="simple-search-bar__button__image"
-        alt="search"></Button>
+        <Button className="simple-search-bar__button"
+            onClickEvent={simpleSearchBarProps.onSearchEvent}
+            image={Search}
+            imageClassName="simple-search-bar__button__image"
+            alt="search"></Button>
         <input className="simple-search-bar__input" type="text" placeholder="Search.."></input>
     </div>
+
 }
