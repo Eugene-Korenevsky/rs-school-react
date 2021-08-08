@@ -1,0 +1,106 @@
+.form-wrapper {
+    max-width: 80%;
+    margin: auto;
+    height: 100%;
+}
+
+.form {
+    width: 50%;
+    margin: auto;
+    border: rgba(102, 0, 128, 0.932) 1px solid;
+    margin-top: 5%;
+}
+
+.form__input {
+    width: 75%;
+    margin-left: 8px;
+    height: 40px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    color: #0f0e0e;
+    font-size: 29px;
+    line-height: 33px;
+}
+
+.form__label {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    align-items: center;
+}
+
+.form-field {
+    width: 95%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.input-wrapper {
+    display: flex;
+}
+
+.input-gender {
+    justify-content: center;
+}
+
+.form__error {
+    height: 20px;
+    margin-left: 30px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    color: #e42c2c;
+    font-size: 19px;
+    line-height: 23px;
+}
+
+.values-wrapper{
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.value-card {
+    width: 70%;
+    margin: auto;
+    margin-top: 10px;
+    background-color: rgb(116, 113, 117);
+}
+
+.form__agree {
+    width: 40%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.form__agree-input {
+    width: 20%;
+}
+
+.form__agree-label {
+    width: 70%;
+}
+
+.form__success-img {
+    margin-left: 30px;
+}
+
+.form__input {
+    margin: auto;
+}
+
+.form__submit {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    color: #353131;
+    font-size: 19px;
+    line-height: 23px;
+    cursor: pointer;
+    width: 20%;
+    height: 50px;
+    margin-left: 240px;
+}
