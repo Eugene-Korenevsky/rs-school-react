@@ -1,0 +1,142 @@
+.news-block__news__img {
+    height: 200px;
+    width: 300px;
+}
+.news-block__news__content-wrapper {
+    display: flex;
+    margin-top: 15px;
+}
+
+.sort-block__button-active {
+    background-color: rgb(171, 194, 152);
+}
+
+.pagination-block-wrapper {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.page-buttons__span {
+    margin-left: 5px;
+}
+
+.page-buttons__button {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+}
+
+.page-buttons__button:hover {
+    cursor: pointer;
+    background-color: #d6c843;
+}
+
+.news-block-wrapper {
+    margin-bottom: 20px;
+}
+
+.news-block__news {
+    margin-top: 70px;
+}
+
+.news-block__span {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #6b6161;
+}
+
+.news-block__h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 29px;
+    line-height: 33px;
+    align-items: center;
+    text-align: center;
+    color: #131212; 
+}
+
+.news-block__news__main-content {
+    margin-left: 30px;
+}
+
+.news-block__news__description {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 23px;
+    align-items: center;
+    text-align: center;
+    color: #131212;
+}
+
+.news-block__news__content {
+    margin-top: 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 19px;
+    line-height: 23px;
+    color: #494343;
+}
+
+.news-block__news__source-name {
+    margin-top: 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 19px;
+    line-height: 23px;
+    color: #070606;
+    margin-bottom: 20px;
+}
+
+.sort-block-wrapper {
+    width: 30%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sort-block__button {  
+    padding: 10px;
+
+}
+
+.sort-block__button:hover {
+    background-color: #d6c843;
+    cursor: pointer;
+}
+
+.error-wrapper {
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.error-h {
+    color: #ec6222;
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 19px;
+    line-height: 23px;
+}
+
+.error-message {
+    margin-top: 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 19px;
+    line-height: 23px;
+    color: #070606;
+}
+
