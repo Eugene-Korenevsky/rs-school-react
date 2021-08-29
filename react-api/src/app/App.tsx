@@ -1,4 +1,5 @@
 import React from 'react';
+import MainPage from '../components/main_page/MainPage';
 import '../style.css';
 
 export default function App(): JSX.Element {
@@ -11,9 +12,10 @@ export default function App(): JSX.Element {
         </head>
         <body>
             <header className="header">
-            </header>
-            <main>
 
+            </header>
+            <main className="main">
+                 <MainPage></MainPage>
             </main>
             <footer className="footer">
 
