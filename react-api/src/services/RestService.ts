@@ -4,7 +4,7 @@ export class RestService {
   private baseUrl;
 
   constructor(baseUrlIns: string) {
-      this.baseUrl = baseUrlIns;
+    this.baseUrl = baseUrlIns;
   }
 
   public async get(url: string, queryParams?: QueryParams): Promise<Response> {

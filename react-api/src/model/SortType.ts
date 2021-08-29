@@ -1,5 +1,5 @@
 export enum SortType {
-    RELEVANCY='relevancy',
-    POPULARITY='popularity',
-    PUBLISHED_AT='publishedAt'
+  RELEVANCY='relevancy',
+  POPULARITY='popularity',
+  PUBLISHED_AT='publishedAt'
 }

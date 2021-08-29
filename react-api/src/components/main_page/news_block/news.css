@@ -116,3 +116,27 @@
     cursor: pointer;
 }
 
+.error-wrapper {
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.error-h {
+    color: #ec6222;
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 19px;
+    line-height: 23px;
+}
+
+.error-message {
+    margin-top: 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 19px;
+    line-height: 23px;
+    color: #070606;
+}
+

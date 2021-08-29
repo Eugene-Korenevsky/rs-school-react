@@ -15,7 +15,7 @@ const devServer = (isDev) => !isDev ? {} : {
     },
 };
 
-//const esLintPlugin = (isDev) => isDev ? [] : [new ESLintPlugin({ extensions: ['ts', 'js'] })];
+const esLintPlugin = (isDev) => isDev ? [] : [new ESLintPlugin({ extensions: ['ts', 'js', 'tsx'] })];
 
 module.exports = ({ development }) => ({
     mode: development ? 'development' : 'production',
@@ -57,6 +57,7 @@ module.exports = ({ development }) => ({
         new HtmlWebpackPlugin({ title: 'English for kids' },
         {link: 'style.css'}),
         new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
+        ...esLintPlugin(development),
     ],
     resolve: {
         extensions: ['.ts', '.js', '.tsx'],

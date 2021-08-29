@@ -1,15 +1,20 @@
 import React from 'react';
-import { NewsIns } from '../../../model/News';
+import { NewsError, NewsIns } from '../../../model/News';
+import ErrorComponent from './ErrorComponent';
 import News from './News';
 
 export interface NewsBlockProps {
-    news: NewsIns[]
+  news: NewsIns[]
+  error: NewsError
 }
 
 export default function NewsBlock(newsBlockProps: NewsBlockProps): JSX.Element {
-    return <div className="news-block-wrapper">
-        {newsBlockProps.news.map((newsIns: NewsIns, index: number): JSX.Element => {
-            return<News key={index} newsIns={newsIns}></News>  
-        })}
-    </div>
+  return <div className="news-block-wrapper">
+    {
+      newsBlockProps.error ? <ErrorComponent error={newsBlockProps.error}></ErrorComponent>: 
+        newsBlockProps.news.map((newsIns: NewsIns, index: number): JSX.Element => 
+          <News key={index} newsIns={newsIns}></News>)
+    }
+    
+  </div>
 }
