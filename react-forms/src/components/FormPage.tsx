@@ -4,35 +4,32 @@ import './form.css';
 import { ValueCard } from './form-values/ValueCard';
 
 export interface FormValues {
-    name: string,
-    surname: string,
-    birthday: string,
-    gender: string,
-    country: string,
-    agree: boolean
+  name: string,
+  surname: string,
+  birthday: string,
+  gender: string,
+  country: string,
+  agree: boolean
 }
 
 export default function FormPage(): JSX.Element {
-    const values: FormValues[] = [];
+  const values: FormValues[] = [];
 
-    const [valuesArr, setValuesArr] = useState(values);
+  const [valuesArr, setValuesArr] = useState(values);
 
-    useEffect(() => {
-        console.log('effect');
-    }, [valuesArr])
+  useEffect(() => {
+  }, [valuesArr])
 
-    const onSubmitHandler = (res: FormValues): void => {
-        const newValues: FormValues[] = [...valuesArr];
-        newValues.push(res)
-        setValuesArr(newValues);
-    }
+  const onSubmitHandler = (res: FormValues): void => {
+    const newValues: FormValues[] = [...valuesArr];
+    newValues.push(res)
+    setValuesArr(newValues);
+  }
 
-    return <div className="form-wrapper">
-        <Form onSubmitHandler={onSubmitHandler}></Form>
-        <div className="values-wrapper">
-            {valuesArr.map((value, index): JSX.Element => {
-               return <ValueCard key={index} formValues={value}></ValueCard>
-            })}
-        </div>
+  return <div className="form-wrapper">
+    <Form onSubmitHandler={onSubmitHandler}></Form>
+    <div className="values-wrapper">
+      {valuesArr.map((value, index): JSX.Element => <ValueCard key={index} formValues={value}></ValueCard>)}
     </div>
+  </div>
 }
