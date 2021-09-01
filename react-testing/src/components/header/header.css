@@ -1,0 +1,33 @@
+.header-wrapper {
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.header-nav {
+    width: 40%;
+    margin: auto;
+}
+
+.header-ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-link {
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #6b6161;
+}
+
+.header-link:hover {
+    color: #0b16b8;
+}
+
+.header-ul .active {
+    color: #e24f15;
+}
